@@ -31,7 +31,7 @@ class App extends Component {
         </div>
         {jedi.map((jedi, index) => (
           <div key={index}>
-            This jedi is named: {jedi.name}
+            Jedi: id: {jedi.id} name: {jedi.name}
           </div>
         ))}
       </div>
