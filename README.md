@@ -1,4 +1,4 @@
-#react-exam
+#react-exam [![Build Status](https://travis-ci.org/FoodMeUp/react-exam.svg?branch=master)](https://travis-ci.org/FoodMeUp/react-exam)
 
 This app is the OFFICIAL **jedi management tool**. For now, it only
 displays the most famous of them.
