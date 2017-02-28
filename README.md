@@ -17,3 +17,22 @@ practices. This will help you to add to it more features.
 Create all the necessary things to register a new jedi.
 
 Hint: All files that you should modify are in `./src`
+
+## Getting started
+Launch the front-end server with:
+```
+npm start
+```
+
+Launch the API server (in a second terminal) with:
+```
+npm run api
+```
+
+Be sure that the project is compiling before pushing with the command:
+```
+npm run compile
+```
+
+## How to?
+Fork this project and create a pull request on this repository from your fork.
