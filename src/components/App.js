@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
 
-import { fetchJedi } from './action';
+import { fetchJedi, addJedi } from './action';
+import Form from './Form';
 
 function mapStateToProps(state) {
   return {
@@ -16,8 +17,16 @@ class App extends Component {
     this.fetchJedi();
   }
 
-  fetchJedi() {
+  fetchJedi = () => {
     this.props.dispatch(fetchJedi());
+  }
+
+  addJedi = (jedi) => {
+    this.props.dispatch(addJedi(jedi));
+    // this.props.dispatch({
+    //   type: 'ADD_JEDI',
+    //   payload: jedi
+    // });
   }
 
   render() {
@@ -34,6 +43,7 @@ class App extends Component {
             Jedi: id: {jedi.id} name: {jedi.name}
           </div>
         ))}
+        < Form formTitle="Ajouter un Jedi" addJedi={this.addJedi} />
       </div>
     );
   }

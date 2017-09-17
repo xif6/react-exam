@@ -11,6 +11,11 @@ function jediReducer(state = [], action) {
         ...action.payload,
         ...state,
       ];
+    case 'ADD_JEDI':
+      return [
+        ...state,
+        action.payload,
+      ];
     default:
       return state;
   }
